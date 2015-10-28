@@ -1,0 +1,19 @@
+﻿
+mixin nav-h(items, activeIndex)
+    nav.nav
+        div.container
+            ul.nav__list
+                each item, index in items
+                    li(class="nav__item " + ((activeIndex == index) ? 'nav__item_active' : ''))
+                        a(href="#" class= "nav__link")= item
+mixin links-h(items)
+    li(class="header__logotype_links-item-or")= items[0]
+    li(class="header__logotype_links-item")= items[1]
+    li(class="header__logotype_links-item")= items[2]
+
+mixin nav-f(items, activeIndex)
+    nav.nav_f
+            ul.nav__list_f
+                each item, index in items
+                    li(class="nav__item_f " + ((activeIndex == index) ? 'nav__item_f_active' : ''))
+                        a(href="#" class= "nav__link_f")= item

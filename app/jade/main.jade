@@ -1,0 +1,36 @@
+﻿include _common/_mixins
+html
+    head
+        meta(http-equiv = 'Content-Type', content = 'text/html; charset=utf-8')
+        meta(name="viewport" content="device-width")
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        meta(name="description" content="Online shop cooltech")
+        meta(name="keywords" content="cooltech")
+        meta(name="author" content="Parhomenko Dmitry")
+        link(rel="stylesheet" type='text/css' href="styles/css/main.css")
+
+        <!-- build:css css/vendor.min.css -->
+        <!-- bower:css -->
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:js js/modernizr.min.js -->
+        <!-- script(src='bower/modernizr/modernizr.js')
+        <!-- endbuild -->
+
+        link(rel="stylesheet" type='text/css' href="./styles/css/main.css")
+
+        title
+            block title
+    body
+        .wrapper
+            .main-content
+                include _common/_header
+                include _common/_nav
+                block content
+        include _common/_footer
+
+        script(src="http://code.jquery.com/jquery-1.10.2.js")
+        script(src="http://code.jquery.com/ui/1.11.4/jquery-ui.js")
+        script(src="js/main.js")

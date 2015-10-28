@@ -1,0 +1,68 @@
+﻿//@import "compass";
+
+/* --------- normalize --------- */
+
+//@import "_misc/normalize";
+
+/* --------- mixins --------- */
+
+//@import "_misc/mixins";
+
+/* --------- adjustment --------- */
+
+//@import "_misc/adjustment";
+
+/* --------- sections --------- */
+
+@import "sections/header";
+
+@import "sections/nav";
+
+@import "sections/sidebar";
+
+@import "sections/phone";
+
+@import "sections/footer";
+body {
+  height: 100%;
+  font: 400 14px/20px 'OpenSans-Semibold', Verdana, sans-serif;
+  background: #f4f4f4;
+  margin: -8px 0;
+}
+
+.container{
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* clearfix */
+.container:before, .clearfix:before,
+.container:after, .clearfix:after {
+  content: " ";      /* 1 */
+  display: table;    /* 2 */
+}
+.container:after, .clearfix:after {
+  clear: both;
+}
+
+  /* формат текста внизу страницы */
+.info__text_wrap {
+  float: left;
+  width: 530px;
+  margin-bottom: 9px;
+}
+
+.info__text_other_wrap {
+  float: right;
+  width: 530px;
+}
+.info__text {
+  display: block;
+  text-align: justify;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #333;
+  line-height: 20px;
+  text-indent: 35px;
+}

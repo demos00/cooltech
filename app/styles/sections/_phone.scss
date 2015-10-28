@@ -1,0 +1,133 @@
+.info_decrib {
+  font-size: 20px;
+  font-weight: 900;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.aside_page {
+  margin-bottom: 30px;
+  float: left;
+  width: 332px;
+}
+
+.section_page {
+  float: right;
+  width: 744px;
+}
+
+.section_bar {
+  background: #e4ebee;
+  border: 1px solid #dee1e4;
+  border-radius: 5px;
+  margin-bottom: 19px;
+}
+
+.bar_form {
+  display: inline-block;
+  margin-left: 20px;
+  padding-top: 14px;
+}
+.bar__label {
+  position: relative;
+  color: #5d656c;
+}
+
+.bar__select {
+  margin-left: 5px;
+  width: 140px;
+  color: #7f7f7f;
+  box-sizing: border-box;
+  padding: 0 5px 5px 10px;
+  -webkit-appearance: none;
+  border: none;
+  border-top: 1px solid #ddd;
+  border-radius: 3px;
+  outline: none;
+  box-shadow: 0px 1px 0 1px rgba(255, 255, 255, 0.3);
+}
+
+
+.bar__label:after {
+  content: '';
+  position: absolute;
+  right: 3px;
+  top: 8px;
+  background: url("../../img/accordeon_chek.png");
+  height: 11px;
+  width: 18px;
+}
+
+.bar_list {
+  float: right;
+  display: inline-block;
+}
+
+.bar__item {
+  margin-right: -1px;
+  display: inline-block;
+  padding: 20px 15px 15px;
+  border-left: 1px solid #dee1e4;
+  &:first-child {
+    vertical-align: top;
+    padding: 17px 14px 0 0;
+    border: none;
+  }
+  &:last-child {
+    padding: 20px 17px 15px;
+  }
+}
+
+.bar__link {
+  display: block;
+  text-indent: -9999px;
+  width: 18px;
+  height: 18px;
+
+}
+
+.bar__link_ls1 {
+  background: url("../../img/bar_list.png");
+  width: 18px;
+  height: 18px;
+  &:hover {
+    background: url("../../img/bar_list_hover.png");
+  }
+}
+.bar__link_ls1.active{
+  background: url("../../img/bar_list_hover.png");
+}
+
+
+.bar__link_ls2 {
+  background: url("../../img/bar_list2.png");
+  width: 18px;
+  height: 18px;
+  &:hover {
+    background: url("../../img/bar_list2_hover.png");
+  }
+}
+.bar__link_ls2.active {
+  background: url("../../img/bar_list2_hover.png");
+}
+
+.bar__link_ls3 {
+  background: url("../../img/bar_list3.png");
+  width: 18px;
+  height: 18px;
+  &:hover {
+    background: url("../../img/bar_list3_hover.png");
+  }
+}
+.bar__link_ls3.active{
+  background: url("../../img/bar_list3_hover.png");
+}
+
+
+.bar__link {
+  background-position-x: 1px;
+}
+
+.horizon2__span {
+  display: none;
+}
